@@ -12,7 +12,7 @@ def generate_problem():
     tanda_operasi = random.choice(operasi)
 
     ekspresi = f"{kiri}{tanda_operasi}{kanan}"
-    hasil = eval(ekspresi)
+    hasil = round(eval(ekspresi),1)
     return ekspresi, hasil 
 
 salah = 0
